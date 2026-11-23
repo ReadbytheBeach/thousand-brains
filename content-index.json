@@ -1,0 +1,238 @@
+{
+  "schema_version": 1,
+  "repository": "ReadbytheBeach/thousand-brains",
+  "primary_language": "zh-CN",
+  "updated_on": "2026-11-23",
+  "reference_format": "https://github.com/ReadbytheBeach/robot-rsi-research",
+  "id_prefix": "TB",
+  "document_globs": [
+    "sessions/**/*.md"
+  ],
+  "categories": [
+    {
+      "id": "agency_and_feedback",
+      "title_zh": "协同、目标与反馈",
+      "title_en": "Coordination, Goals, and Feedback"
+    },
+    {
+      "id": "plasticity_and_hardware",
+      "title_zh": "可塑性与计算硬件",
+      "title_en": "Plasticity and Computing Hardware"
+    },
+    {
+      "id": "reference_frames_and_reasoning",
+      "title_zh": "参考系与知识推理",
+      "title_en": "Reference Frames and Reasoning"
+    }
+  ],
+  "kinds": {
+    "reading_session": {
+      "title_zh": "阅读讨论",
+      "title_en": "Reading session"
+    }
+  },
+  "evidence_tags": {
+    "FACT": {
+      "title_zh": "来源事实",
+      "description_zh": "可核查的实验结果或公开事实；引用时保留来源、条件和实际证据范围。"
+    },
+    "AUTHOR_REPORT": {
+      "title_zh": "外部报告",
+      "description_zh": "原作者、机构或外部评测方报告的结果；不自动表示本仓库独立核验或复现。"
+    },
+    "AUTHOR_HYPOTHESIS": {
+      "title_zh": "作者假说",
+      "description_zh": "书中作者提出的理论模型或假说，不升级为已验证的神经科学结论。"
+    },
+    "DISCUSSION": {
+      "title_zh": "讨论推演",
+      "description_zh": "本次阅读讨论形成的解释、工程类比、判断或推演。"
+    },
+    "PROPOSAL": {
+      "title_zh": "设计建议",
+      "description_zh": "待实施或验证的设计与实验建议。"
+    },
+    "LOCAL_RESULT": {
+      "title_zh": "本地记录",
+      "description_zh": "仓库记录的本地实验或工具检查，必须保留实际运行范围和条件。"
+    },
+    "USER_CONTEXT": {
+      "title_zh": "用户前提",
+      "description_zh": "阅读者提供的背景、问题或应用条件，不据此补造未经验证的事实。"
+    },
+    "AS_OF": {
+      "title_zh": "证据日期",
+      "description_zh": "正文以 [AS_OF:YYYY-MM-DD] 记录动态事实的明确证据截止日期；格式更新不刷新该日期。"
+    }
+  },
+  "reading_routes": [
+    {
+      "title_zh": "按原有阅读进度回顾",
+      "title_en": "Follow the original reading sequence",
+      "document_ids": [
+        "TB-001",
+        "TB-002",
+        "TB-003"
+      ]
+    },
+    {
+      "title_zh": "从表征机制追问工程类比的边界",
+      "title_en": "Trace representation mechanisms and the limits of engineering analogies",
+      "document_ids": [
+        "TB-002",
+        "TB-003",
+        "TB-001"
+      ]
+    }
+  ],
+  "documents": [
+    {
+      "document_id": "TB-001",
+      "session_id": "TB-001",
+      "path": "sessions/01-闭环之内皆可压缩，裁判必须在环外.md",
+      "title_zh": "Session 01 · 闭环之内皆可压缩，裁判必须在环外",
+      "title_en": "Everything Inside a Closed Loop Can Be Compressed; the Judge Must Stand Outside It",
+      "kind": "reading_session",
+      "category": "agency_and_feedback",
+      "language": "zh-CN",
+      "content_date": "2026-10-24",
+      "content_date_kind": "discussion",
+      "evidence_as_of": null,
+      "topics_zh": [
+        "皮质柱与智能体协同",
+        "参考系",
+        "目标函数",
+        "奖励投机",
+        "具身价值锚点"
+      ],
+      "topics_en": [
+        "cortical columns and agent coordination",
+        "reference frames",
+        "objective functions",
+        "reward hacking",
+        "embodied value anchors"
+      ],
+      "question_zh": "皮质柱、智能体与目标函数之间的类比如何成立，身体与外部反馈又怎样约束这些推演？",
+      "reading_summary": [
+        {
+          "tag": "AUTHOR_HYPOTHESIS",
+          "text_zh": "书中以许多具有局部参考系的皮质柱及其共识解释感知，并讨论旧脑与新脑的目标张力；这些理论表述需要与神经科学实验事实区分。"
+        },
+        {
+          "tag": "DISCUSSION",
+          "text_zh": "将皮质柱与 Agent 集群、目标函数与奖励投机对照，围绕共同度量、校准和共同损失讨论协同条件与类比边界。"
+        },
+        {
+          "tag": "DISCUSSION",
+          "text_zh": "围绕本体、内稳态和价值锚点提出推演；关于意识、生存欲及建模目标后能否摆脱目标的判断属于本次讨论，不是实验结论。"
+        }
+      ],
+      "scope_zh": "基于序言 xxiv–xxv 与第一部分开头 p.5 的阅读讨论，原文讨论日期为 2026-10-24，但未给出证据核查截止日；不包含神经科学实验、AI 意识判据或工程实现的验证，也不展开未读章节。",
+      "indexed_on": "2026-11-23",
+      "related_ids": [
+        "TB-002",
+        "TB-003"
+      ]
+    },
+    {
+      "document_id": "TB-002",
+      "session_id": "TB-002",
+      "path": "sessions/02-最贵的不是计算，是遗忘和重写都得便宜.md",
+      "title_zh": "Session 02 · 最贵的不是计算，是遗忘和重写都得便宜",
+      "title_en": "The Real Cost Is Not Computation, but Making Forgetting and Rewriting Cheap",
+      "kind": "reading_session",
+      "category": "plasticity_and_hardware",
+      "language": "zh-CN",
+      "content_date": "2026-10-26",
+      "content_date_kind": "discussion",
+      "evidence_as_of": null,
+      "topics_zh": [
+        "视觉表征",
+        "参考系",
+        "突触可塑性",
+        "存算一体",
+        "三维集成",
+        "机构现状档案"
+      ],
+      "topics_en": [
+        "visual representations",
+        "reference frames",
+        "synaptic plasticity",
+        "in-memory computing",
+        "3D integration",
+        "institutional status archive"
+      ],
+      "question_zh": "从视觉皮层与突触结构出发，生物芯片类比如何揭示表征、能耗与持续改写的不同问题？",
+      "reading_summary": [
+        {
+          "tag": "AUTHOR_HYPOTHESIS",
+          "text_zh": "书中将皮层区域的共通结构和参考系视为理解智能的线索；各区域是否运行同一算法及参考系的广泛推广应保留作者假说属性。"
+        },
+        {
+          "tag": "DISCUSSION",
+          "text_zh": "以生物芯片类比讨论局部连接、存算一体、稀疏活动和三维集成，并把廉价遗忘与重写作为持续学习的关键工程问题。"
+        },
+        {
+          "tag": "AUTHOR_REPORT",
+          "text_zh": "原文附录按“2026-10 核查”归档 Redwood Center、Numenta 与后续机构和项目的状态；这些历史报告未因本次格式整理而重新核验。"
+        }
+      ],
+      "scope_zh": "基于第1章图1-2与 p.22 的阅读及硬件类比，未运行芯片能效或持续学习实验；讨论日期为 2026-10-26，机构附录仅明确到 2026-10 月度核查，不据此补造日精度截止日期或更新机构现状。",
+      "indexed_on": "2026-11-23",
+      "related_ids": [
+        "TB-001",
+        "TB-003"
+      ]
+    },
+    {
+      "document_id": "TB-003",
+      "session_id": "TB-003",
+      "path": "sessions/03-思考是受约束的关系转移.md",
+      "title_zh": "Session 03 · 思考是受约束的关系转移",
+      "title_en": "Thinking Is Constrained Movement Through Relations",
+      "kind": "reading_session",
+      "category": "reference_frames_and_reasoning",
+      "language": "zh-CN",
+      "content_date": "2026-11-22",
+      "content_date_kind": "archive",
+      "evidence_as_of": "2026-11-22",
+      "topics_zh": [
+        "网格细胞",
+        "皮质柱",
+        "位姿与参考系",
+        "知识组织",
+        "大模型数学推理",
+        "形式验证"
+      ],
+      "topics_en": [
+        "grid cells",
+        "cortical columns",
+        "pose and reference frames",
+        "knowledge organization",
+        "LLM mathematical reasoning",
+        "formal verification"
+      ],
+      "question_zh": "参考系怎样组织特征、位姿与知识，“思考是移动”与大模型数学推理的对应有哪些边界？",
+      "reading_summary": [
+        {
+          "tag": "FACT",
+          "text_zh": "网格细胞提供位置编码，不能把坐标范围等同于世界内容容量；旧脑中网格细胞等的实验发现是本文区分理论层次的基础。"
+        },
+        {
+          "tag": "AUTHOR_HYPOTHESIS",
+          "text_zh": "把网格机制推广到新皮质柱、以特征与位姿绑定学习对象，以及认为所有知识由参考系实现，属于作者理论模型，不能由旧脑实验直接确证。"
+        },
+        {
+          "tag": "DISCUSSION",
+          "text_zh": "将思考抽象为受规则约束的关系转移，区分关联提供候选、逻辑约束推导和形式验证检查路径；与大模型的对应不证明其内部具有相同参考系，动态数学事件保留原文截至 2026-11-22 的归档口径。"
+        }
+      ],
+      "scope_zh": "限于第5章已拍页 074、077、080、083、089 及相邻续页和后续批注；原文关于黎曼猜想证明与认证的陈述按截至 2026-11-22 的来源报告封存，本次格式整理未重新核验，不构成脑机制或大模型内部表征的实验验证。",
+      "indexed_on": "2026-11-23",
+      "related_ids": [
+        "TB-001",
+        "TB-002"
+      ]
+    }
+  ]
+}
